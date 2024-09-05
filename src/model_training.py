@@ -3,10 +3,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
-def train_model(X_train, y_train):
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
+def train_model(model, X_train, y_train):
     model.fit(X_train, y_train)
     return model
+
+
 
 def save_model(model, filepath):
     import joblib
