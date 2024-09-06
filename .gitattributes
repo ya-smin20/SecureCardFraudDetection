@@ -1,2 +1,4 @@
 data/raw/creditcard.csv filter=lfs diff=lfs merge=lfs -text
 data/processed/*.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/cleaned_data.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/featured_data.csv filter=lfs diff=lfs merge=lfs -text
